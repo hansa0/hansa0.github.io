@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Hansa Srinivasan
 description: I'm a CS student.
 tags: [about, hansa, srinivasan, deep, learning, neural nets, machine, learning, ai, atlas5d, data]

@@ -1,90 +1,122 @@
-# minima
+# [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 
-*Minima is a one-size-fits-all Jekyll theme for writers*. It's Jekyll's default (and first) theme. It's what you get when you run `jekyll new`.
+[![GitHub release](https://img.shields.io/github/release/mmistakes/minimal-mistakes.svg)](https://github.com/mmistakes/minimal-mistakes/releases) [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 
-![minima theme preview](/screenshot.png)
+Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
 
-## Installation
+See what's new in the [CHANGELOG](CHANGELOG.md).
 
-Add this line to your Jekyll site's Gemfile:
+[![Minimal Mistakes live preview][2]][1]
 
-```ruby
-gem "minima"
-```
+[1]: https://mmistakes.github.io/minimal-mistakes/
+[2]: images/mm-browser-mockups.png (live preview)
 
-And add this line to your Jekyll site:
+The theme includes responsive layouts (`single`, `archive`, and `splash` pages) that look great on mobile and desktop browsers.
 
-```yaml
-theme: minima
-```
+![layout examples](images/mm-layout-examples.png)
 
-And then execute:
+## [Installation and Setup](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) / [Preview the Theme](https://mmistakes.github.io/minimal-mistakes/)
 
-    $ bundle
-    
+### Notable Features
 
-## Usage
+- Compatible with Jekyll 3.x and GitHub Pages
+- Support for Jekyll's built-in Sass/SCSS preprocessor
+- Several layout options (single, archive, splash pages)
+- SEO optimized with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
+- Optional header images, sidebars, table of contents, galleries, related posts, breadcrumb links, and more.
+- Optional comments ([Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and custom).
+- Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom).
+- UI localized text: English (default), Spanish, French, and Turkish.
 
-### Customization
+#### Demo Pages
 
-To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+| Name                                        | Description                                           |
+| ------------------------------------------- | ----------------------------------------------------- |
+| [Post with Header Image][header-image-post] | A post with a large header image. |
+| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
+| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
+| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
+| [Sample Collection Page][sample-collection] | Single page from a collection. |
+| [Categories Archive][categories-archive] | Posts grouped by category. |
+| [Tags Archive][tags-archive] | Posts grouped by tags. |
 
-The site's default CSS has now moved to a new place within the gem itself, [`assets/main.scss`](assets/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
-- Create a new instance of `main.scss` at site source.
-  - Create a new file `main.scss` at `<your-site>/assets/`
-  - Add the frontmatter dashes, and
-  - Add `@import "minima";`, to `<your-site>/assets/main.scss`
-  - Add your custom CSS.
-- Download the file from this repo
-  - Create  a new file `main.scss` at `<your-site>/assets/`
-  - Copy the contents at [assets/main.scss](assets/main.scss) onto the `main.scss` you just created, and edit away!
-- Copy directly from Minima 2.0 gem
-  - Go to your local minima gem installation directory ( run `bundle show minima` to get the path to it ).
-  - Copy the `assets/` folder from there into the root of `<your-site>`
-  - Change whatever values you want, inside `<your-site>/assets/main.scss`
+For even more demo pages check the [posts archive][year-archive].
 
---
+[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
+[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
+[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
+[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
+[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
+[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
+[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
+[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
 
-### Enabling comments (via Disqus)
-
-Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
-
-To enable it, add the following lines to your Jekyll site:
-
-```yaml
-  disqus:
-    shortname: my_disqus_shortname
-```
-
-You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
-
-Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`
-
-If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
-
---
-
-### Enabling Google Analytics
-
-To enable Google Anaytics, add the following lines to your Jekyll site:
-
-```yaml
-  google_analytics: UA-NNNNNNNN-N
-```
-
-Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+---
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jekyll/minima. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Having trouble working with the theme? Found a typo in the documentation? Interested in adding a feature or [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
-## Development
+Minimal Mistakes has been designed as a base for you to customize and fit your site's unique needs. Please keep this in mind when requesting features and/or submitting pull requests. If it's not something that most people will use, I probably won't consider it. When in doubt ask. 
 
-To set up your environment to develop this theme, run `bundle install`.
+This goes for author sidebar links and "share button" additions -- I have no intention of merging in every possibly option, the essentials are there to get you started :smile:.
 
-To test your theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/minima/`. This starts a Jekyll server using your theme and the contents of the `example/` directory. As you make modifications to your theme and to the example site, your site will regenerate and you should see the changes in the browser after a refresh.
+### Pull Requests
+
+To help me out try to avoid creating pull requests on `master` and instead branch off of `develop`. It's much easier for me to test, merge, and roll them into new releases this way.
+
+---
+
+## Credits
+
+### Creator
+
+**Michael Rose**
+
+- <https://mademistakes.com>
+- <https://twitter.com/mmistakes>
+- <https://github.com/mmistakes>
+
+### Icons + Demo Images:
+
+- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- [Unsplash](https://unsplash.com/)
+
+### Other:
+
+- [Jekyll](http://jekyllrb.com/)
+- [jQuery](http://jquery.com/)
+- [Susy](http://susy.oddbird.net/)
+- [Breakpoint](http://breakpoint-sass.com/)
+- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+- [FitVids.JS](http://fitvidsjs.com/)
+- Greedy Navigation - [lukejacksonn](http://codepen.io/lukejacksonn/pen/PwmwWV)
+- [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
+- [Stickyfill](https://github.com/wilddeer/stickyfill)
+
+---
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The MIT License (MIT)
+
+Copyright (c) 2016 Michael Rose
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
